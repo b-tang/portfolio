@@ -1,6 +1,6 @@
 ## Portfolio
 
-Welcome to my portfolio! This site serves as an online portfolio and a space where I showcase my projects, and provide ways to connect with me.
+Welcome to my minimalist portfolio! This site serves as an online portfolio and a space where I showcase my projects, and provide ways to connect with me with simplicity user experience.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This website is a personal portfolio and blog designed to highlight my skills, p
 - **Home Page:** Introduction of who I am.
 - **Projects:** A showcase of my completed and ongoing projects, including descriptions, repositories or PDFs.
 - **Contact:** A email provided to directly get in touch with me.
-- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Minimalist/Simplicity Design:** Optimized for both desktop and mobile devices user experience.
 
 ## Technologies Used
 
