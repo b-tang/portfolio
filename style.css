@@ -1,135 +1,32 @@
-/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  @apply bg-gray-100 font-inter flex-wrap;
+}
+
+nav {
+  @apply bg-white py-4 mb-6;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Profile Section */
-.profile {
-    text-align: center;
-    margin-bottom: 50px;
+  @apply mx-auto p-5 bg-white shadow-md rounded-lg w-full max-w-[700px];
 }
 
 .profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  @apply rounded-full;
 }
 
 .profile h2 {
-    font-size: 28px;
-    margin-top: 20px;
+  @apply text-[22px] font-semibold mt-6 text-[#2C3136];
 }
 
 .profile p {
-    font-size: 16px;
-    color: #666;
-    margin-top: 10px;
+  @apply text-[#434A54] text-[15px] mt-4;
 }
 
-/* Creating Section */
-.creating-section {
-    margin-top: 30px;
-}
-
-.creating-section h6 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.icon-box {
-    margin-bottom: 30px;
-}
-
-.icon-box a {
-    font-size: 20px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.icon-box p {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Hover effect */
-.icon-box a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Me Section */
-.contact-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.contact-section h6 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.contact-button:hover {
-    background-color: #0056b3;
-}
-
-/* Elsewhere Section */
-.elsewhere-section {
-    margin-top: 50px;
-}
-
-.elsewhere-section h6 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 50px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
+/* Add other styling from your HTML to this file similarly */
