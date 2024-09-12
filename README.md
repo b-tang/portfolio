@@ -19,7 +19,7 @@ This website is a personal portfolio and blog designed to highlight my skills, p
 
 - **Home Page:** Introduction of who I am.
 - **Projects:** A showcase of my completed and ongoing projects, including descriptions, repositories or PDFs.
-- **Contact:** A form to get in touch with me directly.
+- **Contact:** A email provided to directly get in touch with me.
 - **Responsive Design:** Optimized for both desktop and mobile devices.
 
 ## Technologies Used
