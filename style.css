@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Styles */
 body {
   @apply bg-gray-100 font-inter flex-wrap;
 }
@@ -14,7 +15,7 @@ nav {
 }
 
 .container {
-  @apply mx-auto p-5 bg-white shadow-md rounded-lg w-full max-w-[700px];
+  @apply mx-auto w-full max-w-[700px];
 }
 
 .profile img {
@@ -29,4 +30,63 @@ nav {
   @apply text-[#434A54] text-[15px] mt-4;
 }
 
-/* Add other styling from your HTML to this file similarly */
+/* Projects Section */
+.creating-section h6 {
+  @apply text-[14px] font-semibold text-[#9CA3AF] mb-6;
+}
+
+.icon-box a {
+  @apply text-[16px] text-[#2C3136] font-semibold flex items-center;
+}
+
+.icon-box p {
+  @apply text-[#434A54] text-[15px] mt-2;
+}
+
+.icon-box svg {
+  @apply ml-2;
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+/* Contact Section */
+.contact-section h6 {
+  @apply text-[14px] font-semibold text-[#9CA3AF] mb-5;
+}
+
+.contact-section p {
+  @apply text-[#434A54] text-[15px];
+}
+
+.contact-section a {
+  @apply bg-[#30353D] text-white text-[14px] px-6 py-2 rounded;
+}
+
+/* Resources Section */
+.resources-section h6 {
+  @apply text-[14px] font-semibold text-[#9CA3AF] mb-6;
+}
+
+.resources-section a {
+  @apply text-[16px] text-[#2C3136] font-semibold flex items-center;
+}
+
+/* Elsewhere Section */
+.elsewhere-section h6 {
+  @apply text-[14px] font-semibold text-[#9CA3AF] mb-5;
+}
+
+.elsewhere-section a {
+  @apply border border-solid text-[13px] text-[#374141] font-normal bg-[#F3F4F6] px-6 py-1.5 rounded mr-1;
+}
+
+/* Footer */
+footer {
+  @apply bg-white border-solid border-t py-12 mt-14;
+}
+
+footer p {
+  @apply text-left text-[#9CA3AF] text-[13px] mt-5;
+}
