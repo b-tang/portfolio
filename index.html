@@ -39,40 +39,6 @@
         },
       };
     </script>
-    <style>
-      @keyframes borderAnimation {
-        0% {
-          border-color: #000000; /* Black */
-        }
-        25% {
-          border-color: #808080; /* Gray */
-        }
-        50% {
-          border-color: #ffffff; /* White */
-        }
-        75% {
-          border-color: #808080; /* Gray */
-        }
-        100% {
-          border-color: #000000; /* Black */
-        }
-      }
-
-      .profile-picture {
-        position: relative;
-        width: 100px; /* Adjust as needed */
-        height: 100px; /* Adjust as needed */
-        border-radius: 50%;
-        border: 4px solid transparent; /* Initial border color */
-        animation: borderAnimation 7s infinite; /* Animation duration and repeat */
-      }
-
-      .profile-picture img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-      }
-    </style>
   </head>
 
   <body class="bg-white font-inter flex-wrap">
@@ -93,13 +59,11 @@
           class="rounded-full"
         /> -->
         <div class="flex items-center gap-4">
-          <div class="profile-picture">
-            <img
-              src="/images/pfp.jpg"
-              alt="Brian Tang profile picture"
-              class="rounded-full select-none"
-            />
-          </div>
+          <img
+            src="/images/pfp.jpg"
+            alt="Brian Tang profile picture"
+            class="rounded-full select-none"
+          />
           <div class="text-[20px] text-[#2C3136] font-semibold select-none">
             <div>Brian Tang</div>
             <div class="text-[14px] text-[#9CA3AF] font-semibold">
