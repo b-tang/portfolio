@@ -21,8 +21,8 @@ document
     successMessage.classList.remove("hidden");
 
     // Show tooltip
-    tooltip.classList.remove("invisible", "opacity-0");
-    tooltip.classList.add("visible", "opacity-100");
+    // tooltip.classList.remove("invisible", "opacity-0");
+    // tooltip.classList.add("visible", "opacity-100");
 
     // Swap button icon and message
     const defaultMessageSpan = document.getElementById("default-message");
@@ -32,8 +32,8 @@ document
 
     // Hide the tooltip after 2 seconds
     setTimeout(() => {
-      tooltip.classList.add("invisible", "opacity-0");
-      tooltip.classList.remove("visible", "opacity-100");
+      // tooltip.classList.add("invisible", "opacity-0");
+      // tooltip.classList.remove("visible", "opacity-100");
 
       // Reset messages and icons
       defaultMessage.classList.remove("hidden");
