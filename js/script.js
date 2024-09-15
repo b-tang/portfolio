@@ -13,7 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const defaultIcon = document.getElementById("default-icon");
   const successIcon = document.getElementById("success-icon");
+  const tooltip = document.getElementById(
+    "tooltip-copy-npm-install-copy-button"
+  );
 
+  // Show tooltip on hover
+  copyButton.addEventListener("mouseenter", function () {
+    tooltip.classList.remove("invisible", "opacity-0");
+    tooltip.classList.add("opacity-100");
+  });
+
+  // Hide tooltip when mouse leaves
+  copyButton.addEventListener("mouseleave", function () {
+    tooltip.classList.add("invisible", "opacity-0");
+  });
+
+  // Handle copy to clipboard action
   copyButton.addEventListener("click", function () {
     // Copy text from the input field
     inputField.select();
@@ -34,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
           successTooltipMessage.classList.add("hidden");
           defaultIcon.classList.remove("hidden");
           successIcon.classList.add("hidden");
+          tooltip.classList.add("invisible", "opacity-0");
         }, 2000);
       })
       .catch((err) => {
