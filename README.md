@@ -18,9 +18,9 @@ This website is a personal portfolio and blog designed to highlight my skills, p
 ## Features
 
 - **Home Page:** Introduction of who I am.
-- **Projects:** A showcase of my completed and ongoing projects, including descriptions, repositories or PDFs.
-- **Contact:** A email provided to directly get in touch with me.
-- **Minimalist/Simplicity Design:** Optimized for both desktop and mobile devices user experience.
+- **Projects:** A showcase of my completed and ongoing projects, including descriptions, repositories, or PDFs.
+- **The Contact:** Email provided to get in touch with me directly.
+- **Minimalist/Simplicity Design:** Optimized for desktop and mobile device user experience.
 
 ## Technologies Used
 
