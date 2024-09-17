@@ -31,7 +31,7 @@ This website is a personal portfolio and blog designed to highlight my skills, p
 
 ## Usage
 
-To view the website, simply visit the following link: <!--> [your-name](your-url)
+To view the website, simply visit the following link: [briantang.vercel.app](https://briantang.vercel.app/)
 
 ## License
 
