@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Oliur – Designer and Creator" />
+    <meta name="description" content="Brian Tang – Engineer and Developer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -26,14 +26,14 @@
       href="/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <title>Brian Tang</title>
+    <title>Brian</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              inter: ["Inter", "sans-serif"], // Add Inter font to Tailwind
+              inter: ["Inter", "sans-serif"],
             },
           },
         },
@@ -41,50 +41,70 @@
     </script>
   </head>
 
-  <body class="bg-gray-100 font-inter flex-wrap">
+  <body class="font-inter flex-wrap overflow-x-hidden scroll-smooth w-full">
     <!-- Navigation Bar -->
-    <nav class="bg-white py-8">
-      <div class="container mx-auto w-full max-w-[700px]">
-        <!-- Add nav content here -->
-      </div>
+    <nav class="py-5 sm:py-5 md:py-10 lg:py-10">
+      <div class="container mx-auto w-full max-w-[700px]" />
     </nav>
 
     <!-- Main Container -->
-    <div
-      class="container mx-auto p-5 bg-white shadow-md rounded-lg w-full max-w-[700px]"
-    >
+    <div class="container flex flex-col p-4 mx-auto w-full max-w-[700px]">
       <!-- Profile Section -->
-      <div class="profile mb-24">
-        <img
+      <div class="profile">
+        <!-- <img
           src="/images/pfp.jpg"
           alt="Brian Tang profile picture"
           class="rounded-full"
-        />
-        <h2 class="text-[22px] font-semibold mt-6 text-[#2C3136]">
-          I'm Brian Tang –– a creative engineer & developer.
+        /> -->
+        <div class="flex items-center gap-4">
+          <img
+            src="/images/pfp.jpg"
+            alt="Brian Tang profile picture"
+            class="rounded-full select-none"
+          />
+          <div class="text-[20px] text-[#2C3136] font-semibold select-none">
+            <div>Brian Tang</div>
+            <div class="text-[14px] text-[#9CA3AF] font-semibold">
+              Joined in September 2001
+            </div>
+          </div>
+        </div>
+        <h2 class="text-[22px] font-semibold mt-7 text-[#2C3136]">
+          I&apos;m a creative engineer and developer.
         </h2>
-        <p class="text-[#434A54] text-[15px] mt-4">
-          I started as a Computer Science Graduate from Cal State LA, passionate
-          about technology and continuous learning. Experienced in coding
-          through personal projects and eager to contribute as a software
-          engineer or developer in an innovative organization.
+        <p
+          class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-[19px]"
+        >
+          I started my passion for coding at an early age, now I am a Computer
+          Science Graduate from Cal State LA, passionate about technology and
+          continuous learning. Experienced in coding through personal projects
+          and eager to contribute as a software engineer or developer in an
+          innovative organization.
         </p>
       </div>
 
       <!-- Projects Section -->
-      <div class="creating-section mb-24">
-        <h6 class="text-[14px] font-semibold text-[#9CA3AF] mb-6">Projects</h6>
+      <div
+        class="creating-section mb-10 sm:mb-10 md:mb-20 lg:mb-20 mt-16 sm:mt-16 md:mt-28 lg:mt-28"
+      >
+        <h6
+          class="text-[12px] sm:text-[12px] md:text-[14px] lg:text-[14px] font-semibold text-[#9CA3AF] mb-6"
+        >
+          Projects
+        </h6>
 
         <!-- Projects Grid Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-[30px] gap-y-[10px] items-center"
+        >
           <div class="icon-box mb-6">
             <a
               href="./files/qtc_srs_and_report.pdf"
               download="Secure_Module&Key_Management_App_Documentation"
-              class="text-[16px] text-[#2C3136] font-semibold flex items-center"
+              class="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[16px] text-[#2C3136] font-semibold flex items-center"
             >
-              Secure Module/Key Management App
-              <svg
+              Secure Module/Key Management
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -96,9 +116,24 @@
                 <path
                   d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
                 />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="#9CA3AF"
+                class="size-4 ms-2"
+              >
+                <path
+                  d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z"
+                />
+                <path
+                  d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z"
+                />
               </svg>
             </a>
-            <p class="text-[#434A54] text-[15px] mt-2">
+            <p
+              class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-2"
+            >
               Designed to facilitate secure data transfer between servers across
               various domains.
             </p>
@@ -107,10 +142,10 @@
             <a
               href="https://github.com/tomnguyen211/Slender-Man"
               target="_blank"
-              class="text-[16px] text-[#2C3136] font-semibold flex items-center"
+              class="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[16px] text-[#2C3136] font-semibold flex items-center"
             >
-              It Follows Game
-              <svg
+              It Follows
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -122,21 +157,36 @@
                 <path
                   d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
                 />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="#9CA3AF"
+                class="size-4 ms-3"
+              >
+                <path
+                  d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z"
+                />
+                <path
+                  d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z"
+                />
               </svg>
             </a>
-            <p class="text-[#434A54] text-[15px] mt-2">
+            <p
+              class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-2"
+            >
               Slender Man inspired story survival horror game created with my
               two friends.
             </p>
           </div>
           <div class="icon-box mb-6">
             <a
-              href="https://github.com/b-tang/Airport-Database"
+              href="https://github.com/b-tang/airport-database"
               target="_blank"
-              class="text-[16px] text-[#2C3136] font-semibold flex items-center"
+              class="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[16px] text-[#2C3136] font-semibold flex items-center"
             >
               Airport Database
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -148,21 +198,36 @@
                 <path
                   d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
                 />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="#9CA3AF"
+                class="size-4 ms-3"
+              >
+                <path
+                  d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z"
+                />
+                <path
+                  d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z"
+                />
               </svg>
             </a>
-            <p class="text-[#434A54] text-[15px] mt-2">
+            <p
+              class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-2"
+            >
               Demonstrate foundational knowledge of SQL using clauses: SELECT,
               FROM, and WHERE.
             </p>
           </div>
           <div class="icon-box mb-6">
             <a
-              href="https://github.com/b-tang/Broztybot.js"
+              href="https://github.com/b-tang/broztybot.js"
               target="_blank"
-              class="text-[16px] text-[#2C3136] font-semibold flex items-center"
+              class="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[16px] text-[#2C3136] font-semibold flex items-center"
             >
-              Broztybot.js (Inactive)
-              <svg
+              Broztybot
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -174,113 +239,400 @@
                 <path
                   d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
                 />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="#9CA3AF"
+                class="size-4 ms-3"
+              >
+                <path
+                  d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z"
+                />
+                <path
+                  d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z"
+                />
               </svg>
             </a>
-            <p class="text-[#434A54] text-[15px] mt-2">
-              Personal self-hosting chat bot for Twitch creators and Discord
+            <p
+              class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-2"
+            >
+              Self-hosting JavaScript chat bot for Twitch creators and Discord
               servers.
+            </p>
+          </div>
+          <div class="icon-box mb-6">
+            <a
+              href="https://github.com/b-tang/data-visualization"
+              target="_blank"
+              class="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[16px] text-[#2C3136] font-semibold flex items-center"
+            >
+              Data Visualization
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                fill="#9CA3AF"
+                aria-hidden="true"
+                class="e-font-icon-svg e-fas-external-link-alt ms-3"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
+                />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="#9CA3AF"
+                class="size-4 ms-3"
+              >
+                <path
+                  d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z"
+                />
+                <path
+                  d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z"
+                />
+              </svg>
+            </a>
+            <p
+              class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-2"
+            >
+              Data and analysis of EEG band patterns to correlate neural markers
+              with levels of student confusion.
+            </p>
+          </div>
+          <div class="icon-box mb-6">
+            <a
+              href="https://github.com/b-tang/book-exchange-system"
+              target="_blank"
+              class="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[16px] text-[#2C3136] font-semibold flex items-center"
+            >
+              Book Exchange
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                fill="#9CA3AF"
+                aria-hidden="true"
+                class="e-font-icon-svg e-fas-external-link-alt ms-3"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
+                />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="#9CA3AF"
+                class="size-4 ms-3"
+              >
+                <path
+                  d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z"
+                />
+                <path
+                  d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z"
+                />
+              </svg>
+            </a>
+            <p
+              class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mt-2"
+            >
+              Final front/backend project for CS 3337 SWE course using PyCharm
+              with Django framework.
             </p>
           </div>
         </div>
       </div>
 
+      <!-- Skills Section -->
+      <div class="contact-section">
+        <h6
+          class="text-[12px] sm:text-[12px] md:text-[14px] lg:text-[14px] font-semibold text-[#9CA3AF] mb-6"
+        >
+          Skills
+        </h6>
+        <div
+          class="icon-box mb-6 text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px] flex justify-start items-center flex-wrap gap-[5px] sm:gap-[5px] md:gap-[1.5px] lg:gap-[1.5px]"
+        >
+          <!-- <p
+            class="text-[#434A54] text-[13px] sm:text-[15px] md:text-[15px] lg:text-[15px]"
+          >
+            Java, JavaScript, Python, HTML, CSS, C#, C++, PostgreSQL, and
+            TailWindCSS.
+          </p> -->
+          <span
+            class="bg-red-100 text-red-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >Java</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >JavaScript</span
+          >
+          <span
+            class="bg-blue-100 text-blue-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >Python</span
+          >
+          <span
+            class="bg-gray-100 text-gray-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >HTML</span
+          >
+          <span
+            class="bg-indigo-100 text-indigo-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >CSS</span
+          >
+          <span
+            class="bg-purple-100 text-purple-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >C#</span
+          >
+          <span
+            class="bg-sky-100 text-sky-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >C++</span
+          >
+          <span
+            class="bg-sky-800 text-sky-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-sky-800 dark:text-sky-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >PostgreSQL</span
+          >
+          <span
+            class="bg-cyan-100 text-cyan-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-900 dark:text-cyan-300 hover:bg-opacity-80 transition-all duration-300 select-none"
+            >Tailwind CSS</span
+          >
+        </div>
+      </div>
+
       <!-- The Contact Section -->
-      <div class="contact-section mb-20">
-        <h6 class="text-[14px] font-semibold text-[#9CA3AF] mb-5">
+      <div
+        class="contact-section mt-14 sm:mt-14 md:mt-20 lg:mt-20 mb-20 sm:mb-20 md:mb-28 lg:mb-28"
+      >
+        <h6
+          class="text-[12px] sm:text-[12px] md:text-[14px] lg:text-[14px] font-semibold text-[#9CA3AF] mb-5"
+        >
           The Contact
         </h6>
-        <div class="icon-box mb-5">
-          <p class="text-[#434A54] text-[15px]">
+        <div class="icon-box mb-[13px]">
+          <p
+            class="text-[#434A54] text-[13px] sm:text-[13px] md:text-[15px] lg:text-[15px] mb-4"
+          >
             Any inquiries? Get in touch with me below!
           </p>
         </div>
-        <a
-          href="mailto:briantang31@gmail.com"
-          class="bg-[#30353D] text-white text-[14px] px-6 py-2 rounded"
-          >Contact Me ➔</a
-        >
-      </div>
+        <!-- <div
+          class="flex flex-col sm:flex-row sm:space-x-2 space-y-2.5 sm:space-y-2.5"
+        > -->
+        <div class="w-full max-w-[17rem]">
+          <div class="relative">
+            <label for="npm-install-copy-text" class="sr-only">Label</label>
+            <input
+              id="npm-install-copy-text"
+              type="text"
+              class="col-span-6 bg-[#F9FAFB] border text-[#434A54] font-normal text-sm rounded block w-full px-2.5 py-2.5"
+              value="briantang31@gmail.com"
+              disabled
+              readonly
+            />
+            <button
+              data-copy-to-clipboard-target="npm-install-copy-text"
+              data-tooltip-target="tooltip-copy-npm-install"
+              class="absolute end-2.5 top-1/2 -translate-y-1/2 text-gray-100 bg-[#30353D] hover:bg-[#374151] rounded py-1.5 px-2.5 inline-flex items-center"
+            >
+              <span id="default-message" class="inline-flex items-center">
+                <!-- <svg
+                  class="w-3 h-3 me-1.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#F3F4F6"
+                  viewBox="0 0 18 20"
+                >
+                  <path
+                    d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"
+                  />
+                </svg> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 me-1.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M216 40v128h-48V88H88V40Z" opacity=".2" />
+                  <path
+                    d="M216 32H88a8 8 0 0 0-8 8v40H40a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h128a8 8 0 0 0 8-8v-40h40a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8Zm-56 176H48V96h112Zm48-48h-32V88a8 8 0 0 0-8-8H96V48h112Z"
+                  />
+                </svg>
+                <span class="text-xs font-semibold text-white select-none">
+                  Copy
+                </span>
+              </span>
+              <span
+                id="success-message"
+                class="hidden inline-flex items-center"
+              >
+                <svg
+                  class="w-3 h-3 text-white me-1.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 12"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5.917 5.724 10.5 15 1.5"
+                  />
+                </svg>
+                <span class="text-xs font-semibold text-white"> Copied </span>
+              </span>
+            </button>
 
-      <!-- Resource Section -->
-      <div class="contact-section mb-24">
-        <h6 class="text-[14px] font-semibold text-[#9CA3AF] mb-6">Resources</h6>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="icon-box mb-6">
-            <a
-              href=""
-              class="text-[16px] text-[#2C3136] font-semibold flex items-center"
-            >
-              Coming soon
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                fill="#9CA3AF"
-                aria-hidden="true"
-                class="e-font-icon-svg e-fas-external-link-alt ms-3"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
-                />
-              </svg>
-            </a>
-            <p class="text-[#434A54] text-[15px] mt-2">Work in progress...</p>
-          </div>
-          <div class="icon-box mb-6">
-            <a
-              href=""
-              class="text-[16px] text-[#2C3136] font-semibold flex items-center"
-            >
-              Coming soon
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                fill="#9CA3AF"
-                aria-hidden="true"
-                class="e-font-icon-svg e-fas-external-link-alt ms-3"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h144a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16ZM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24Z"
-                />
-              </svg>
-            </a>
-            <p class="text-[#434A54] text-[15px] mt-2">Work in progress...</p>
+            <!-- Tooltip -->
+            <div>
+              <span id="default-tooltip-message"/span> <span
+              id="success-tooltip-message" class="hidden"/span>
+            </div>
           </div>
         </div>
+
+        <!-- <a
+            class="bg-transparent border-2 text-[#30353D] text-[14px] pl-[10px] pr-[50px] pt-[6px] mt-2 rounded w-full sm:w-auto select-all"
+            >briantang31@gmail.com</a
+          >
+          <button
+            class="relative inline-flex items-center justify-center overflow-hidden rounded group bg-gradient-to-br from-[#30353D] via-gray-500 to-white group-hover:from-[#30353D] group-hover:to-gray-500 hover:text-white dark:text-white w-full sm:w-auto"
+          >
+            <a
+              href="mailto:briantang31@gmail.com"
+              class="text-white text-[14px] px-6 py-2 rounded transition-all ease-in duration-75 bg-[#30353D] text-white group-hover:bg-opacity-0 w-full sm:w-auto select-none"
+              >Contact Me ➔</a
+            >
+          </button> -->
+
+        <!-- <a
+            class="bg-transparent border-2 text-[#30353D] text-[14px] pl-2 pr-12 px-6 pt-[6px] mt-2 rounded"
+            >briantang31@gmail.com</a
+          >
+          <button
+            class="relative inline-flex items-center justify-center overflow-hidden rounded group bg-gradient-to-br from-[#30353D] via-gray-500 to-white group-hover:from-[#30353D] group-hover:to-gray-500 hover:text-white dark:text-white w-full sm:w-auto"
+          >
+            <a
+              href="mailto:briantang31@gmail.com"
+              class="text-white text-[14px] px-6 py-2 rounded transition-all ease-in duration-75 bg-[#30353D] text-white group-hover:bg-opacity-0 w-full sm:w-auto select-none"
+              >Contact Me ➔</a
+            >
+          </button> -->
+
+        <!-- <a
+            class="bg-transparent border-2 border-[#30353D] text-[#30353D] text-[14px] px-6 py-3 rounded mr-1 inline-flex items-center justify-center relative top-1 select-all"
+          >
+            briantang31@gmail.com
+          </a>
+
+          <button
+            class="relative inline-flex items-center justify-center border overflow-hidden rounded group bg-gradient-to-br from-[#30353D] via-gray-500 to-white group-hover:from-[#30353D] group-hover:to-gray-500 hover:text-white dark:text-white"
+          >
+            <a
+              href="mailto:briantang31@gmail.com"
+              class="text-white text-[14px] px-6 py-2 rounded transition-all ease-in duration-75 bg-[#30353D] group-hover:bg-opacity-0 w-full sm:w-auto select-none"
+            >
+              Contact Me ➔
+            </a>
+          </button> -->
+        <!-- </div> -->
       </div>
 
       <!-- Elsewhere Section -->
       <div class="elsewhere-section">
-        <h6 class="text-[14px] font-semibold text-[#9CA3AF] mb-5">Elsewhere</h6>
-        <a
-          href="https://github.com/b-tang"
-          target="_blank"
-          class="border text-[13px] text-[#374151] font-normal bg-[#F3F4F6] px-6 py-1.5 rounded mr-1"
-          >GitHub</a
+        <h6
+          class="text-[12px] sm:text-[12px] md:text-[14px] lg:text-[14px] font-semibold text-[#9CA3AF] mb-5"
         >
-        <a
-          href="https://www.linkedin.com/in/briantang01"
-          target="_blank"
-          class="border text-[13px] text-[#374151] font-normal bg-[#F3F4F6] px-6 py-1.5 rounded mr-1"
-          >LinkedIn</a
-        >
-        <a
-          href="https://x.com/briantangg"
-          target="_blank"
-          class="border text-[13px] text-[#374151] font-normal bg-[#F3F4F6] px-6 py-1.5 rounded"
-          >Twitter</a
-        >
+          Elsewhere
+        </h6>
+        <div class="flex items-center flex-wrap gap-[10px]">
+          <button>
+            <a
+              href="https://github.com/b-tang"
+              target="_blank"
+              class="border text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px] text-[#374151] font-normal bg-[#F3F4F6] px-[16.2px] py-[5.75px] rounded flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-[5px] align-middle w-[12px] h-[12px] sm:w-[12px] sm:h-[12px] md:w-[13px] md:h-[13px] lg:w-[13px] lg:h-[13px]"
+                viewBox="0 0 24 24"
+                fill="#374151"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.004.07 1.533 1.032 1.533 1.032.892 1.53 2.341 1.088 2.91.832.09-.647.35-1.088.637-1.339-2.22-.253-4.555-1.11-4.555-4.941 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.566 9.566 0 0112 6.845c.854.004 1.712.116 2.514.34 1.91-1.296 2.75-1.025 2.75-1.025.545 1.378.201 2.397.099 2.65.64.698 1.029 1.591 1.029 2.682 0 3.841-2.337 4.685-4.564 4.934.359.309.678.921.678 1.856 0 1.339-.012 2.419-.012 2.749 0 .268.18.576.688.478A10.005 10.005 0 0022 12c0-5.523-4.477-10-10-10z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              b-tang
+            </a>
+          </button>
+          <button>
+            <a
+              href="https://www.linkedin.com/in/briantang01"
+              target="_blank"
+              class="border text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px] text-[#374151] font-normal bg-[#F3F4F6] px-[16.2px] py-[5.75px] rounded flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-[4px] align-middle w-[12px] h-[12px] sm:w-[12px] sm:h-[12px] md:w-[13px] md:h-[13px] lg:w-[13px] lg:h-[13px]"
+                viewBox="0 0 24 24"
+                fill="#374151"
+              >
+                <path
+                  d="M20.452 20.452h-3.554v-5.399c0-1.287-.024-2.946-1.796-2.946-1.797 0-2.073 1.404-2.073 2.853v5.492h-3.554V9h3.415v1.561h.048c.476-.901 1.635-1.846 3.367-1.846 3.6 0 4.264 2.37 4.264 5.456v6.28zM5.337 7.433c-1.144 0-2.068-.928-2.068-2.073s.924-2.073 2.068-2.073c1.145 0 2.073.928 2.073 2.073 0 1.145-.928 2.073-2.073 2.073zm1.777 13.019H3.56V9h3.554v11.452z"
+                />
+              </svg>
+              briantang01
+            </a>
+          </button>
+          <button>
+            <a
+              href="https://x.com/briantangg"
+              target="_blank"
+              class="border text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px] text-[#374151] font-normal bg-[#F3F4F6] px-[16.2px] py-[5.75px] rounded flex items-center"
+            >
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-1.5 align-middle w-[12px] h-[12px] sm:w-[13px] sm:h-[13px] md:w-[13px] md:h-[13px] lg:w-[13px] lg:h-[13px]"
+                viewBox="0 0 24 24"
+                fill="#374151"
+              >
+                <path
+                  d="M23.643 4.937c-.835.37-1.73.623-2.675.733a4.696 4.696 0 002.048-2.59c-.893.53-1.882.915-2.932 1.123A4.673 4.673 0 0016.615 3a4.688 4.688 0 00-4.685 4.686c0 .37.042.732.122 1.078-3.894-.196-7.354-2.059-9.665-4.893a4.725 4.725 0 00-.634 2.358 4.686 4.686 0 002.08 3.904 4.66 4.66 0 01-2.121-.585v.06c0 2.27 1.614 4.164 3.755 4.596a4.713 4.713 0 01-2.115.08 4.688 4.688 0 004.382 3.256 9.397 9.397 0 01-5.804 2.003c-.377 0-.748-.022-1.116-.065a13.31 13.31 0 007.192 2.107c8.634 0 13.356-7.154 13.356-13.356 0-.204-.005-.408-.015-.611a9.532 9.532 0 002.337-2.43z"
+                />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-[5px] align-middle w-[12px] h-[12px] sm:w-[12px] sm:h-[12px] md:w-[13px] md:h-[13px] lg:w-[13px] lg:h-[13px]"
+                viewBox="0 0 24 24"
+                fill="#374151"
+              >
+                <path
+                  d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                />
+              </svg>
+              briantangg
+            </a>
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-white border-t py-12 mt-14">
-      <div class="container mx-auto p-5 w-full max-w-[700px]">
-        <p class="text-left text-[#9CA3AF] text-[13px] mt-5">
-          © 2024 Brian Tang. All rights reserved. <br />Made with 🩶.
+    <footer
+      class="border-t py-[40px] mt-[40px] sm:mt-[40px] md:mt-[70px] lg:mt-[70px]"
+    >
+      <div class="container mx-auto p-4 w-full max-w-[700px]">
+        <p
+          class="text-[#9CA3AF] text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px]"
+        >
+          © 2024 Brian. All rights reserved. <br />Made with 🩶.
         </p>
       </div>
     </footer>
