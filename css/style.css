@@ -1,0 +1,120 @@
+/* styles.css */
+* {
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    background-color: #AAA;
+    width: 100%;
+}
+
+h1 {
+	color: #666;
+	/* top: 50%; */
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%) scale(2, 2);
+	transition: 0.5s ease-in-out;
+}
+
+h1.top {
+	/* top: 0; */
+	transform: translateX(-50%);
+    font-size: 50px;
+}
+
+#main {
+	opacity: 0;
+	transition: 0.5s;
+	color: #666;
+	margin-top: 60px;
+}
+
+.p-text {
+    color: #666;
+    line-height: 20px;
+    padding: 80px;
+}
+
+.copy {
+    background-color: #AAA;
+    color: #666;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2px 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.copy:hover {
+    /* background: #999; */
+    color: #0C8F0C;
+}
+
+.copy:success {
+    background: #BBB;
+    color: #666;
+    /* cursor: not-allowed; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background-color: #999;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #666;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0C8F0C;
+}
+
+.circle-x-btn {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 40px; /* Size of the button */
+    height: 40px; /* Match width for circular shape */
+    background-color: #999; /* Red background for the "X" button */
+    color: #666; /* White "X" text */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Size of the "X" */
+    font-weight: bold; /* Make the "X" stand out */
+    border-radius: 50%; /* Makes it circular */
+    border: 1px solid transparent;
+    position: fixed; /* Fixed position for consistency */
+    bottom: 100px; /* Adjust vertical placement */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Place above other elements */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.circle-x-btn:hover {
+    transform: translateX(-50%) scale(1.1); /* Slightly enlarge on hover */
+    border-color: #666;
+}
