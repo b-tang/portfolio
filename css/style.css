@@ -9,13 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: auto;
+    margin: 0 auto;
     background-color: #AAA;
-    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 50px;
 }
 
-h1 {
-	color: #666;
+h2 {
+	color: #999;
 	/* top: 50%; */
 	left: 50%;
 	position: absolute;
@@ -23,7 +25,7 @@ h1 {
 	transition: 0.5s ease-in-out;
 }
 
-h1.top {
+h2.top {
 	/* top: 0; */
 	transform: translateX(-50%);
     font-size: 50px;
@@ -36,10 +38,241 @@ h1.top {
 	margin-top: 60px;
 }
 
+#text-style-projects {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background-color: #111;
+		bottom: 0;
+		left: 0;
+		transform-origin: right;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	&:hover::before {
+		transform-origin: left;
+		transform: scaleX(1);
+	}	
+}
+
+#text-style-projects-github {
+    border-radius: 1px;
+	padding: 0 .25rem;
+	margin: 0 -.25rem;
+  	box-shadow: inset 0 0 0 0 #2b3137;
+  	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	&:hover {
+    	color: #fafbfc;
+    	box-shadow: inset 100px 0 0 0 #2b3137;
+  	}
+}
+
+#text-style-about-me-1 {
+	position: relative;
+	transition: color .3s ease-in-out;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		height: 2px;
+        border-radius: 2px;
+		background-color: #E44610;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	&:hover {
+		color: #E44610;
+	}
+	&:hover::before {
+		transform: scaleX(1);
+	}	
+}
+
+#text-style-about-me-2 {
+	position: relative;
+	transition: color .3s ease-in-out;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		height: 2px;
+        border-radius: 2px;
+		background-color: #E6CC40;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	&:hover {
+		color: #E6CC40;
+	}
+	&:hover::before {
+		transform: scaleX(1);
+	}	
+}
+
+#text-style-email {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background-color: #111;
+		bottom: 0;
+		left: 0;
+		transform-origin: right;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	&:hover::before {
+		transform-origin: left;
+		transform: scaleX(1);
+	}	
+}
+
+#text-style-socials-1 {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background-color: #EEE;
+		bottom: 0;
+		left: 0;
+		transform-origin: right;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	&:hover::before {
+		transform-origin: left;
+		transform: scaleX(1);
+	}	
+}
+
+#text-style-socials-2 {
+    border-radius: 1px;
+	padding: 0 .25rem;
+	margin: 0 -.25rem;
+  	box-shadow: inset 0 0 0 0 #0077B5;
+  	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	&:hover {
+    	color: #EEE;
+    	box-shadow: inset 100px 0 0 0 #0077B5;
+  	}
+}
+
+#text-style-socials-3 {
+	position: relative;
+	transition: color .3s ease-in-out;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		height: 1px;
+		background-color: white;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	&:hover {
+		color: #EEE;
+	}
+	&:hover::before {
+		transform: scaleX(1);
+	}	
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 2rem; /* Space between grid items */
+}
+  
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust further for smaller screens */
+    }
+}
+  
+@media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stack all items in a single column on very small screens */
+    }
+}
+  
+.grid-item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.grid-item p {
+    font-size: 14px;
+}
+  
+.grid-item p {
+    max-width: 300px;
+    word-wrap: break-word;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .p-text {
     color: #666;
-    line-height: 20px;
-    padding: 80px;
+    line-height:20px;
+    animation: fadeIn 0.5s ease-in-out;
+    font-size: 15px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}  
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.p-text-bold {
+    color:#111;
+    font-weight:bold
+}
+
+.p-text a {
+    color: #111;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+
+.p-text a:hover {
+    color: #111;
+}
+
+/* .p-text h4 {
+    font-size: 16px;
+} */
+
+.p-text-links {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    width: fit-content; /* Adjust width to fit content */
+}
+
+.p-text-links li {
+    margin: 5px 0; /* Add spacing between list items */
+}
+
+.p-text-links span {
+    font-size: 14px;
 }
 
 .copy {
@@ -54,8 +287,7 @@ h1.top {
 }
 
 .copy:hover {
-    /* background: #999; */
-    color: #0C8F0C;
+    color: #111;
 }
 
 .copy:success {
@@ -69,11 +301,11 @@ h1.top {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 5%; 
+    bottom: 69px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
-    background-color: #999;
+    width: 290px;
+    background-color: #9999995e;
     border-radius: 20px;
     z-index: 1000;
 }
@@ -86,19 +318,47 @@ h1.top {
 
 .nav-links a {
     color: #666;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #0C8F0C;
+    color: #111;
+}
+
+.circle-left-btn {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 35px; /* Size of the button */
+    height: 35px; /* Match width for circular shape */
+    color: #666; /* White "X" text */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Size of the "X" */
+    font-weight: bold; /* Make the "X" stand out */
+    border-radius: 50%; /* Makes it circular */
+    
+    position: fixed; /* Fixed position for consistency */
+    bottom: 200px; /* Adjust vertical placement */
+    left: 45%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Place above other elements */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.circle-left-btn:hover {
+    transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
+    border-color: #666;
+    
 }
 
 .circle-x-btn {
     display: flex;
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
-    width: 40px; /* Size of the button */
-    height: 40px; /* Match width for circular shape */
+    width: 35px; /* Size of the button */
+    height: 35px; /* Match width for circular shape */
     background-color: #999; /* Red background for the "X" button */
     color: #666; /* White "X" text */
     text-decoration: none; /* Remove underline */
@@ -107,14 +367,105 @@ h1.top {
     border-radius: 50%; /* Makes it circular */
     border: 1px solid transparent;
     position: fixed; /* Fixed position for consistency */
-    bottom: 100px; /* Adjust vertical placement */
+    bottom: 200px; /* Adjust vertical placement */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     z-index: 1000; /* Place above other elements */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .circle-x-btn:hover {
-    transform: translateX(-50%) scale(1.1); /* Slightly enlarge on hover */
+    transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
     border-color: #666;
+    animation: circle-btn-effect 0.5s ease-in-out;
+}
+
+.circle-right-btn {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 35px; /* Size of the button */
+    height: 35px; /* Match width for circular shape */
+    color: #666; /* White "X" text */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Size of the "X" */
+    font-weight: bold; /* Make the "X" stand out */
+    border-radius: 50%; /* Makes it circular */
+    position: fixed; /* Fixed position for consistency */
+    bottom: 200px; /* Adjust vertical placement */
+    left: 55%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Place above other elements */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.circle-right-btn:hover {
+    transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
+    border-color: #666;
+    
+}
+
+@keyframes circle-btn-effect {
+    50% {opacity: 0;}
+    50% {opacity: 1;}
+} 
+
+/* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .circle-x-btn {
+        bottom: 250px; /* Place the button higher for medium screens */
+    }
+    .circle-left-btn {
+        bottom: 250px; /* Match vertical placement */
+        left: 40%; /* Adjust horizontal placement */
+    }
+    .circle-right-btn {
+        bottom: 250px; /* Match vertical placement */
+        left: 60%; /* Adjust horizontal placement */
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .circle-x-btn {
+        bottom: 100px; /* Lower the button */
+        width: 30px; /* Adjust size */
+        height: 30px; /* Match circular size */
+        font-size: 16px; /* Scale down the font */
+    }
+    .circle-left-btn {
+        bottom: 100px; /* Match vertical placement */
+        left: 30%; /* Adjust horizontal placement for smaller screens */
+        width: 30px; /* Adjust size */
+        height: 30px;
+        font-size: 16px;
+    }
+    .circle-right-btn {
+        bottom: 100px; /* Match vertical placement */
+        left: 70%; /* Adjust horizontal placement for smaller screens */
+        width: 30px; /* Adjust size */
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle-x-btn {
+        bottom: 50px; /* Even lower for very small screens */
+        transform: translate(-50%, 0); /* Adjust horizontal centering */
+    }
+    .circle-x-btn {
+        bottom: 50px; /* Even lower for very small screens */
+        transform: translate(-50%, 0); /* Adjust horizontal centering */
+    }
+    .circle-left-btn {
+        bottom: 50px; /* Match vertical placement */
+        left: 20%; /* Adjust horizontal placement for very small screens */
+    }
+    .circle-right-btn {
+        bottom: 50px; /* Match vertical placement */
+        left: 80%; /* Adjust horizontal placement for very small screens */
+    }
 }
