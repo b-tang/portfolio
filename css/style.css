@@ -308,6 +308,8 @@ h1.top {
     background-color: #9999995e;
     border-radius: 20px;
     z-index: 1000;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links {
@@ -320,6 +322,8 @@ h1.top {
     color: #666;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
+    display: inline-block;
 }
 
 .nav-links a:hover {
