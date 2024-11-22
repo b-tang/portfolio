@@ -41,45 +41,31 @@ let anim = [
     { t: ">brian_tang_", ms: 200 },
     { t: ">brian_tang", ms: 200 },
     { t: ">brian_tang_", ms: 200 },
+    // { t: "{brian_tang }", ms: 200 },
+    // { t: "{brian_tang_}", ms: 200 },
+    // { t: "{brian_tang }", ms: 200 },
+    // { t: "{brian_tang_}", ms: 200 },
     { t: "{brian_tang}", ms: 200 },
     { t: "{brian_tang}", ms: 200 }
 ];
+let stepDenominator = 1;
+if (window.localStorage.stepDenominator)
+    stepDenominator = window.localStorage.stepDenominator;
+let i = 0;
+let update = () => {
+    let step = anim[i];
+    header.innerText = step.t;
+    i++;
 
-// Check if the page is being refreshed
-if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-    playAnimation();
-} else {
-    skipAnimation();
-}
-
-function playAnimation() {
-    let stepDenominator = 1;
-    if (window.localStorage.stepDenominator)
-        stepDenominator = window.localStorage.stepDenominator;
-
-    let i = 0;
-    let update = () => {
-        let step = anim[i];
-        header.innerText = step.t;
-        i++;
-
-        if (i < anim.length)
-            setTimeout(update, step.ms / stepDenominator);
-        else {
-            header.classList.add('top');
-            setTimeout(() => {
-                document.getElementById('main').style.opacity = 1;
-                initGlobe();
-            }, 500);
-            window.localStorage.stepDenominator = 2;
-        }
+    if (i < anim.length)
+        setTimeout(update, step.ms / stepDenominator);
+    else {
+        header.classList.add('top');
+        setTimeout(() => {
+            document.getElementById('main').style.opacity = 1;
+            initGlobe();
+        }, 500);
+        window.localStorage.stepDenominator = 2;
     }
-    update();
 }
-
-function skipAnimation() {
-    header.innerText = "{brian_tang}";
-    document.getElementById('main').style.opacity = 1;
-    header.classList.add('top');
-    initGlobe(); // Ensure this still runs without the animation
-}
+update();
