@@ -3,17 +3,14 @@
     font-family: 'Inconsolata', monospace;
 }
 
-html {
-    background: #AAA;
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100dvh;
     padding: 0 69px;
     margin: 0;
+    background: #AAA;
     overflow: auto;
 }
 
