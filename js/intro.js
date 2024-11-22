@@ -41,9 +41,12 @@ let anim = [
     { t: ">brian_tang_", ms: 200 },
     { t: ">brian_tang", ms: 200 },
     { t: ">brian_tang_", ms: 200 },
+    // { t: "{brian_tang }", ms: 200 },
+    // { t: "{brian_tang_}", ms: 200 },
+    // { t: "{brian_tang }", ms: 200 },
+    // { t: "{brian_tang_}", ms: 200 },
     { t: "{brian_tang}", ms: 200 },
-    { t: "{brian_tang_}", ms: 200 },
-    { t: "{brian_tang}", ms: 200 },
+    { t: "{brian_tang}", ms: 200 }
 ];
 let stepDenominator = 1;
 if (window.localStorage.stepDenominator)
