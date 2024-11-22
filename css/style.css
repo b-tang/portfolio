@@ -3,6 +3,10 @@
     font-family: 'Inconsolata', monospace;
 }
 
+html {
+    background: #AAA;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -10,7 +14,6 @@ body {
     min-height: 100vh;
     padding: 0 69px;
     margin: 0;
-    background: #AAA;
     overflow: auto;
 }
 
