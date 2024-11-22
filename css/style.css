@@ -9,14 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    max-width: 1024px;
+    padding: 0 50px;
     margin: 0 auto;
     background-color: #AAA;
     overflow: hidden;
     scroll-behavior: smooth;
-    padding: 50px;
 }
 
-h2 {
+h1 {
 	color: #999;
 	/* top: 50%; */
 	left: 50%;
@@ -25,10 +26,9 @@ h2 {
 	transition: 0.5s ease-in-out;
 }
 
-h2.top {
+h1.top {
 	/* top: 0; */
 	transform: translateX(-50%);
-    font-size: 50px;
 }
 
 #main {
