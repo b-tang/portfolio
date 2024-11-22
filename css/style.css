@@ -367,7 +367,7 @@ h1.top {
     align-items: center; /* Center text vertically */
     width: 35px; /* Size of the button */
     height: 35px; /* Match width for circular shape */
-    background-color: #999; /* Red background for the "X" button */
+    background-color: #9999995e; /* background for the "X" button */
     color: #666; /* White "X" text */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Size of the "X" */
