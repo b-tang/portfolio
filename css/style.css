@@ -298,32 +298,39 @@ h1.top {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Equal spacing between links */
+    align-items: center; /* Center links vertically */
     position: fixed;
-    bottom: 69px; 
+    bottom: 69px;
     left: 50%;
     transform: translateX(-50%);
-    width: 290px;
+    width: 280px;
+    height: 52px;
     background-color: #9999995e;
     border-radius: 20px;
     z-index: 1000;
-    padding: 0;
-    margin: 0;
+    padding: 0.5rem 1rem;
+    -webkit-transform: translateX(-50%);
+    box-sizing: border-box;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links a {
     color: #666;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
+    text-decoration: none;
     display: inline-block;
+    text-align: center;
 }
 
 .nav-links a:hover {
