@@ -46,7 +46,7 @@ h1.top {
 		width: 100%;
 		height: 2px;
 		border-radius: 2px;
-		background-color: #111;
+		background-color: #666;
 		bottom: 0;
 		left: 0;
 		transform-origin: right;
@@ -123,7 +123,7 @@ h1.top {
 		width: 100%;
 		height: 2px;
 		border-radius: 2px;
-		background-color: #111;
+		background-color: #666;
 		bottom: 0;
 		left: 0;
 		transform-origin: right;
@@ -348,7 +348,6 @@ h1.top {
     font-size: 20px; /* Size of the "X" */
     font-weight: bold; /* Make the "X" stand out */
     border-radius: 50%; /* Makes it circular */
-    
     position: fixed; /* Fixed position for consistency */
     bottom: 200px; /* Adjust vertical placement */
     left: 45%; /* Center horizontally */
@@ -361,7 +360,6 @@ h1.top {
 .circle-left-btn:hover {
     transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
     border-color: #666;
-    
 }
 
 .circle-x-btn {
