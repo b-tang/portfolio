@@ -11,7 +11,7 @@ body {
     padding: 0 69px;
     margin: 0;
     background: #AAA;
-    overflow:hidden
+    overflow: auto;
 }
 
 h1 {
