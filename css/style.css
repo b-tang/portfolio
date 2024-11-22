@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     background-color: #AAA;
     fill: #AAA;
-    overflow: hidden;
+    scroll-behavior: smooth;
     overflow-x: hidden;
     overscroll-behavior: none;
     padding-top: env(safe-area-inset-top);
