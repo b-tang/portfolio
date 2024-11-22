@@ -12,6 +12,7 @@ body {
     padding: 0 50px;
     margin: 0 auto;
     background-color: #AAA;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
