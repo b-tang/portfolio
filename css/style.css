@@ -7,18 +7,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    max-width: 1024px;
+    min-height: 100vh;
     padding: 0 69px;
-    margin: 0 auto;
-    background-color: #AAA;
-    fill: #AAA;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    overscroll-behavior: none;
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    box-sizing: border-box;
+    margin: 0;
+    background: #AAA;
+    overflow:hidden
 }
 
 h1 {
