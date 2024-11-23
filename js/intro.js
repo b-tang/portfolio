@@ -37,14 +37,10 @@ let anim = [
     { t: ">BRIAN_TA_", ms: 100 },
     { t: ">BRIAN_TAN_", ms: 100 },
     { t: ">BRIAN_TANG_", ms: 100 },
-    { t: ">BRIAN_TANG", ms: 200 },
-    { t: ">BRIAN_TANG_", ms: 200 },
-    { t: ">BRIAN_TANG", ms: 200 },
-    { t: ">BRIAN_TANG_", ms: 200 },
-    // { t: "{brian_tang }", ms: 200 },
-    // { t: "{brian_tang_}", ms: 200 },
-    // { t: "{brian_tang }", ms: 200 },
-    // { t: "{brian_tang_}", ms: 200 },
+    { t: "{BRIAN_TANG }", ms: 200 },
+    { t: "{BRIAN_TANG_}", ms: 200 },
+    { t: "{BRIAN_TANG }", ms: 200 },
+    { t: "{BRIAN_TANG_}", ms: 200 },
     { t: "{BRIAN_TANG}", ms: 200 },
     { t: "{BRIAN_TANG}", ms: 200 }
 ];
