@@ -186,31 +186,6 @@ h1.top {
 
 #text-style-email {
 	position: relative;
-	&::before {
-		content: '';
-		position: absolute;
-        top: 100%;
-		width: 100%;
-		height: 2px;
-		border-radius: 2px;
-		background-color: #666;
-		bottom: 0;
-		left: 0;
-		transform-origin: right;
-		transform: scaleX(0);
-		transition: transform .3s ease-in-out;
-	}
-    &:hover {
-		color: #666;
-	}
-	&:hover::before {
-		transform-origin: left;
-		transform: scaleX(1);
-	}	
-}
-
-#text-style-socials-1 {
-	position: relative;
 	transition: color .3s ease-in-out;
 	&::before {
 		content: '';
@@ -218,28 +193,54 @@ h1.top {
 		top: 100%;
 		width: 100%;
 		height: 2px;
-		background-color: #333;
+        border-radius: 2px;
+		background-color: #666;
 		transform: scaleX(0);
 		transition: transform .3s ease-in-out;
 	}
 	&:hover {
-		color: #EEE;
+		color: #666;
 	}
 	&:hover::before {
 		transform: scaleX(1);
 	}	
 }
 
+#text-style-socials-1 {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+        top: 100%;
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background-color: #333;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+    &:hover {
+		color: #EEE;
+	}
+	&:hover::before {
+		transform-origin: right;
+		transform: scaleX(1);
+	}
+}
+
 #text-style-socials-2 {
     border-radius: 1px;
-	padding: 0 .25rem;
-	margin: 0 -.25rem;
-  	box-shadow: inset 0 0 0 0 #0077B5;
-  	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-	&:hover {
-    	color: #EEE;
-    	box-shadow: inset 100px 0 0 0 #0077B5;
-  	}
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    box-shadow: inset 0 0 0 0 #0077B5;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    &:hover {
+        color: #EEE;
+        box-shadow: inset -100px 0 0 0 #0077B5;
+    }
 }
 
 #text-style-socials-3 {
@@ -254,7 +255,7 @@ h1.top {
 		background-color: #EEE;
 		bottom: 0;
 		left: 0;
-		transform-origin: right;
+		transform-origin: left;
 		transform: scaleX(0);
 		transition: transform .3s ease-in-out;
 	}
@@ -262,7 +263,7 @@ h1.top {
 		color: #1DA1F2;
 	}
 	&:hover::before {
-		transform-origin: left;
+		transform-origin: right;
 		transform: scaleX(1);
 	}	
 }
