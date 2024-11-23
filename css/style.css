@@ -1,9 +1,10 @@
 /* styles.css */
 * {
     font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
 }
 
-body {
+html, body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +12,7 @@ body {
     padding: 0 50px;
     margin: 0;
     background-color: #AAA;
+    background-attachment: fixed;
     overflow: auto;
 }
 
@@ -414,7 +416,6 @@ h1.top {
     z-index: 1000;
     padding: 0.5rem 1rem;
     -webkit-transform: translateX(-50%);
-    box-sizing: border-box;
 }
 
 .nav-links {
