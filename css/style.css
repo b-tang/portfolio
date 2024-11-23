@@ -200,6 +200,9 @@ h1.top {
 		transform: scaleX(0);
 		transition: transform .3s ease-in-out;
 	}
+    &:hover {
+		color: #666;
+	}
 	&:hover::before {
 		transform-origin: left;
 		transform: scaleX(1);
