@@ -399,12 +399,6 @@ h1.top {
     color: #111;
 }
 
-.copy:success {
-    background: #BBB;
-    color: #666;
-    /* cursor: not-allowed; */
-}
-
 .navbar {
     display: flex;
     justify-content: space-between; /* Equal spacing between links */
