@@ -22,10 +22,10 @@ let header = document.querySelector('#intro');
 //     { t: "{Brian Tang}", ms: 200 }
 // ];
 let anim = [
-    { t: ">", ms: 200 },
-    { t: ">_", ms: 200 },
-    { t: ">", ms: 200 },
-    { t: ">_", ms: 200 },
+    { t: "> _", ms: 200 },
+    { t: ">__", ms: 200 },
+    { t: "> _", ms: 200 },
+    { t: ">__", ms: 200 },
     { t: ">B_", ms: 100 },
     { t: ">BR_", ms: 100 },
     { t: ">BRI_", ms: 100 },
