@@ -37,7 +37,6 @@ h1.top {
 
 #text-style-navbar-1 {
 	position: relative;
-
 	&::before {
 		content: '';
 		position: absolute;
@@ -339,18 +338,56 @@ h1.top {
     font-size: 16px;
 } */
 
-.p-text-links {
+@media (max-width: 640px) {
+    .p-text-about-me {
+        font-size: 14px;
+    }
+}
+
+.p-text-project-links {
     list-style: none; /* Remove default bullet points */
     padding: 0; /* Remove padding */
     width: fit-content; /* Adjust width to fit content */
 }
 
-.p-text-links li {
+.p-text-project-links li {
     margin: 5px 0; /* Add spacing between list items */
 }
 
-.p-text-links span {
+.p-text-project-links span {
     font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    .p-text-project-links li a {
+        font-size: 13px;
+    }
+    .p-text-project-links li span {
+        font-size: 12px;
+    }
+    .p-text-project-links p {
+        font-size: 13px;
+    }
+}
+
+.p-text-social-links {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    width: fit-content; /* Adjust width to fit content */
+}
+
+.p-text-social-links li {
+    margin: 5px 0; /* Add spacing between list items */
+}
+
+.p-text-social-links span {
+    font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    .p-text-social-links {
+        font-size: 14px;
+    }
 }
 
 .copy {
