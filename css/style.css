@@ -359,14 +359,8 @@ h1.top {
 }
 
 @media (max-width: 640px) {
-    .p-text-project-links li a {
-        font-size: 13px;
-    }
-    .p-text-project-links li span {
-        font-size: 12px;
-    }
-    .p-text-project-links p {
-        font-size: 13px;
+    .p-text-project-links {
+        font-size: 14px;
     }
 }
 
