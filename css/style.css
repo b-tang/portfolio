@@ -10,9 +10,8 @@ body {
     height: 100dvh;
     padding: 0 50px;
     margin: 0;
-    background-color: #AAA;
+    background: #AAA;
     overflow: hidden;
-    scroll-behavior: smooth;
     flex-wrap: wrap;
 }
 
