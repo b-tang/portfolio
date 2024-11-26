@@ -48,12 +48,12 @@ h1.top {
 		background-color: #111;
 		bottom: 0;
 		left: 0;
-		transform-origin: left;
+		transform-origin: right;
 		transform: scaleX(0);
 		transition: transform .3s ease-in-out;
 	}
 	&:hover::before {
-		transform-origin: right;
+		transform-origin: left;
 		transform: scaleX(1);
 	}
 }
@@ -93,12 +93,12 @@ h1.top {
 		background-color: #111;
 		bottom: 0;
 		left: 0;
-		transform-origin: right;
+		transform-origin: left;
 		transform: scaleX(0);
 		transition: transform .3s ease-in-out;
 	}
 	&:hover::before {
-		transform-origin: left;
+		transform-origin: right;
 		transform: scaleX(1);
 	}
 }
