@@ -202,7 +202,7 @@ h1.top {
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease;
   position: absolute;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%);
   bottom: calc(100% + 10px);
   z-index: 100;
