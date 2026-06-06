@@ -496,10 +496,10 @@ h1.top {
     align-items: center; /* Center text vertically */
     width: 35px; /* Size of the button */
     height: 35px; /* Match width for circular shape */
-    color: #666; /* White "X" text */
+    color: #666; /* White "<" text */
     text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Size of the "X" */
-    font-weight: bold; /* Make the "X" stand out */
+    font-size: 20px; /* Size of the "<" */
+    font-weight: bold; /* Make the "<" stand out */
     border-radius: 50%; /* Makes it circular */
     position: fixed; /* Fixed position for consistency */
     bottom: 200px; /* Adjust vertical placement */
@@ -549,10 +549,10 @@ h1.top {
     align-items: center; /* Center text vertically */
     width: 35px; /* Size of the button */
     height: 35px; /* Match width for circular shape */
-    color: #666; /* White "X" text */
+    color: #666; /* White ">" text */
     text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Size of the "X" */
-    font-weight: bold; /* Make the "X" stand out */
+    font-size: 20px; /* Size of the ">" */
+    font-weight: bold; /* Make the ">" stand out */
     border-radius: 50%; /* Makes it circular */
     position: fixed; /* Fixed position for consistency */
     bottom: 200px; /* Adjust vertical placement */
@@ -566,7 +566,6 @@ h1.top {
 .circle-right-btn:hover {
     transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
     border-color: #666;
-    
 }
 
 @keyframes circle-btn-effect {
