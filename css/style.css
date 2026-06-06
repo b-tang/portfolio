@@ -22,7 +22,26 @@ body.subpage {
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
-  /* adjust or hide elements that break */
+  .page-container {
+    align-items: flex-start;
+    padding: 20px 50px;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  body.subpage {
+    overflow: auto;
+  }
+
+  .circle-left-btn,
+  .circle-x-btn,
+  .circle-right-btn {
+    bottom: 20px;
+  }
+
+  .navbar {
+    bottom: 10px;
+  }
 }
 
 h1 {
@@ -37,6 +56,12 @@ h1 {
 h1.top {
   /* top: 0; */
   transform: translateX(-50%);
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  h1 {
+    font-size: 1rem;
+  }
 }
 
 #main {
