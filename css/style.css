@@ -37,6 +37,27 @@ h1.top {
 	margin-top: 60px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;          
+    list-style: none;
+    margin: 0;
+    padding: 0;        
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+}
+
 #text-style-navbar-1 {
 	position: relative;
 	&::before {
