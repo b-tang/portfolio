@@ -31,6 +31,7 @@ h1.top {
 
 #main {
 	opacity: 0;
+    pointer-events: none;
 	transition: 0.5s;
 	color: #666;
 	margin-top: 60px;

@@ -57,8 +57,9 @@ let update = () => {
     else {
         header.classList.add('top');
         setTimeout(() => {
-            document.getElementById('main').style.opacity = 1;
-            initGlobe();
+            const main = document.getElementById('main');
+            main.style.opacity = 1;
+            main.style.pointerEvents = 'auto';
         }, 500);
         window.localStorage.stepDenominator = 2;
     }
