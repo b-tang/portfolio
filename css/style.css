@@ -22,25 +22,42 @@ body.subpage {
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
+  body.subpage {
+    overflow: auto;
+  }
+
   .page-container {
     align-items: flex-start;
-    padding: 20px 50px;
+    padding: 20px 50px 60px 50px;
     height: auto;
     overflow-y: auto;
   }
 
-  body.subpage {
-    overflow: auto;
+  h1 {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    bottom: 10px;
   }
 
   .circle-left-btn,
   .circle-x-btn,
   .circle-right-btn {
-    bottom: 20px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
   }
 
-  .navbar {
-    bottom: 10px;
+  .circle-left-btn {
+    left: 44%;
+  }
+  .circle-x-btn {
+    left: 50%;
+  }
+  .circle-right-btn {
+    left: 56%;
   }
 }
 
@@ -56,12 +73,6 @@ h1 {
 h1.top {
   /* top: 0; */
   transform: translateX(-50%);
-}
-
-@media (max-height: 500px) and (orientation: landscape) {
-  h1 {
-    font-size: 1rem;
-  }
 }
 
 #main {
