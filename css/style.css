@@ -7,6 +7,12 @@ body {
   margin: 0;
   background: #aaa;
   overflow: hidden;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+body.subpage {
+  overflow: auto;
 }
 
 h1 {
@@ -29,6 +35,16 @@ h1.top {
   transition: 0.5s;
   color: #666;
   margin-top: 60px;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  padding: 0 50px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -544,153 +560,101 @@ h1.top {
   color: #111;
 }
 
-.circle-left-btn {
+/* Shared button styles */
+.circle-left-btn,
+.circle-x-btn,
+.circle-right-btn {
   display: flex;
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-  width: 35px; /* Size of the button */
-  height: 35px; /* Match width for circular shape */
-  color: #666; /* White "<" text */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Size of the "<" */
-  font-weight: bold; /* Make the "<" stand out */
-  border-radius: 50%; /* Makes it circular */
-  position: fixed; /* Fixed position for consistency */
-  bottom: 200px; /* Adjust vertical placement */
-  left: 45%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 1000; /* Place above other elements */
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  color: #666;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 120px;
+  transform: translateX(-50%);
+  z-index: 1000;
   transition:
     background-color 0.3s ease,
-    transform 0.2s ease; /* Smooth hover effects */
+    transform 0.2s ease;
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.circle-left-btn {
+  left: 44%;
+}
+.circle-x-btn {
+  left: 50%;
+}
+.circle-right-btn {
+  left: 56%;
+}
+
+/* Hover */
+.circle-left-btn:hover,
+.circle-x-btn:hover,
+.circle-right-btn:hover {
+  border-color: #666;
 }
 
 .circle-left-btn:hover {
-  transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
-  border-color: #666;
+  transform: translateX(-50%) scale(1.11);
 }
-
-.circle-x-btn {
-  display: flex;
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-  width: 35px; /* Size of the button */
-  height: 35px; /* Match width for circular shape */
-  /* background-color: #9999995e; */ /* background for the "X" button */
-  color: #666; /* White "X" text */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Size of the "X" */
-  font-weight: bold; /* Make the "X" stand out */
-  border-radius: 50%; /* Makes it circular */
-  /* border: 1px solid transparent; */
-  position: fixed; /* Fixed position for consistency */
-  bottom: 200px; /* Adjust vertical placement */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 1000; /* Place above other elements */
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease; /* Smooth hover effects */
-  animation: fadeIn 0.5s ease-in-out;
-}
-
 .circle-x-btn:hover {
-  transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
-  border-color: #666;
-  /* animation: circle-btn-effect 0.5s ease-in-out; */
+  transform: translateX(-50%) scale(1.11);
 }
-
-.circle-right-btn {
-  display: flex;
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-  width: 35px; /* Size of the button */
-  height: 35px; /* Match width for circular shape */
-  color: #666; /* White ">" text */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Size of the ">" */
-  font-weight: bold; /* Make the ">" stand out */
-  border-radius: 50%; /* Makes it circular */
-  position: fixed; /* Fixed position for consistency */
-  bottom: 200px; /* Adjust vertical placement */
-  left: 55%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 1000; /* Place above other elements */
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease; /* Smooth hover effects */
-  animation: fadeIn 0.5s ease-in-out;
-}
-
 .circle-right-btn:hover {
-  transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
-  border-color: #666;
+  transform: translateX(-50%) scale(1.11);
 }
 
-@keyframes circle-btn-effect {
-  50% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-/* Media query for medium screens */
+/* Medium screens */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .circle-x-btn {
-    bottom: 250px; /* Place the button higher for medium screens */
-  }
   .circle-left-btn {
-    bottom: 250px; /* Match vertical placement */
-    left: 40%; /* Adjust horizontal placement */
+    bottom: 250px;
+    left: 40%;
+  }
+  .circle-x-btn {
+    bottom: 250px;
   }
   .circle-right-btn {
-    bottom: 250px; /* Match vertical placement */
-    left: 60%; /* Adjust horizontal placement */
+    bottom: 250px;
+    left: 60%;
   }
 }
 
-/* Media query for small screens */
+/* Small screens */
 @media (max-width: 768px) {
-  .circle-x-btn {
-    bottom: 100px; /* Lower the button */
-    width: 30px; /* Adjust size */
-    height: 30px; /* Match circular size */
-    font-size: 16px; /* Scale down the font */
+  .circle-left-btn,
+  .circle-x-btn,
+  .circle-right-btn {
+    bottom: 100px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
   }
   .circle-left-btn {
-    bottom: 100px; /* Match vertical placement */
-    left: 30%; /* Adjust horizontal placement for smaller screens */
-    width: 30px; /* Adjust size */
-    height: 30px;
-    font-size: 16px;
+    left: 30%;
   }
   .circle-right-btn {
-    bottom: 100px; /* Match vertical placement */
-    left: 70%; /* Adjust horizontal placement for smaller screens */
-    width: 30px; /* Adjust size */
-    height: 30px;
-    font-size: 16px;
+    left: 70%;
   }
 }
 
+/* Extra small screens */
 @media (max-width: 480px) {
-  .circle-x-btn {
-    bottom: 50px; /* Even lower for very small screens */
-    transform: translate(-50%, 0); /* Adjust horizontal centering */
-  }
-  .circle-x-btn {
-    bottom: 50px; /* Even lower for very small screens */
-    transform: translate(-50%, 0); /* Adjust horizontal centering */
+  .circle-left-btn,
+  .circle-x-btn,
+  .circle-right-btn {
+    bottom: 50px;
   }
   .circle-left-btn {
-    bottom: 50px; /* Match vertical placement */
-    left: 20%; /* Adjust horizontal placement for very small screens */
+    left: 20%;
   }
   .circle-right-btn {
-    bottom: 50px; /* Match vertical placement */
-    left: 80%; /* Adjust horizontal placement for very small screens */
+    left: 80%;
   }
 }
