@@ -380,38 +380,38 @@ h1.top {
 }
 
 /* .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
-  
-@media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-    }
-}
-  
-@media (max-width: 480px) {
-    .grid-container {
-      grid-template-columns: 1fr; 
-    }
-} */
 
-/* .grid-item {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }
-  
-.grid-item p {
-    font-size: 14px;
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
-  
+
+.grid-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .grid-item p {
-    max-width: 300px;
-    word-wrap: break-word;
-    margin-top: auto;
-    margin-bottom: auto;
+  font-size: 14px;
+}
+
+.grid-item p {
+  max-width: 300px;
+  word-wrap: break-word;
+  margin-top: auto;
+  margin-bottom: auto;
 } */
 
 .p-text {
