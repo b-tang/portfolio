@@ -4,20 +4,14 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100dvh;
-  padding: 0 50px;
   margin: 0;
   background: #aaa;
   overflow: hidden;
-  flex-wrap: wrap;
 }
 
 h1 {
   color: #66666666;
-  /* top: 50%; */
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translateX(-50%) translateY(-50%) scale(2, 2);
