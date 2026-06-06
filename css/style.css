@@ -184,6 +184,55 @@ h1.top {
 	}	
 }
 
+@keyframes breathe {
+  0%   { text-shadow: 0 0 4px #69ff47, 0 0 10px #69ff47, 0 0 18px #69ff4744; opacity: 1; }
+  50%  { text-shadow: 0 0 10px #69ff47, 0 0 28px #69ff47, 0 0 48px #69ff4788; opacity: 0.85; }
+  100% { text-shadow: 0 0 4px #69ff47, 0 0 10px #69ff47, 0 0 18px #69ff4744; opacity: 1; }
+}
+
+#name-hover {
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.name-photo-popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 10px);
+  z-index: 100;
+  pointer-events: none;
+}
+
+#name-hover:hover .name-photo-popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.name-photo-popup img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #69ff47;
+  display: block;
+}
+
+.name-photo-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #69ff47;
+}
+
 #text-style-email {
 	position: relative;
 	transition: color .3s ease-in-out;
@@ -472,13 +521,13 @@ h1.top {
     align-items: center; /* Center text vertically */
     width: 35px; /* Size of the button */
     height: 35px; /* Match width for circular shape */
-    background-color: #9999995e; /* background for the "X" button */
+    /* background-color: #9999995e; */ /* background for the "X" button */
     color: #666; /* White "X" text */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Size of the "X" */
     font-weight: bold; /* Make the "X" stand out */
     border-radius: 50%; /* Makes it circular */
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     position: fixed; /* Fixed position for consistency */
     bottom: 200px; /* Adjust vertical placement */
     left: 50%; /* Center horizontally */
@@ -491,7 +540,7 @@ h1.top {
 .circle-x-btn:hover {
     transform: translateX(-50%) scale(1.11); /* Slightly enlarge on hover */
     border-color: #666;
-    animation: circle-btn-effect 0.5s ease-in-out;
+    /* animation: circle-btn-effect 0.5s ease-in-out; */
 }
 
 .circle-right-btn {
