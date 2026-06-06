@@ -15,6 +15,16 @@ body.subpage {
   overflow: auto;
 }
 
+@media (max-width: 768px) {
+  body.subpage {
+    overflow: hidden;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  /* adjust or hide elements that break */
+}
+
 h1 {
   color: #666;
   top: 50%;
