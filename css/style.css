@@ -50,7 +50,7 @@ h1 {
   position: absolute;
   transform: translateX(-50%) translateY(-50%) scale(2, 2);
   transition: 0.5s ease-in-out;
-  font-size: 1.98rem;
+  font-size: 1.8rem;
 }
 
 h1.top {
