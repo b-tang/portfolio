@@ -68,6 +68,7 @@ h1 {
   position: absolute;
   transform: translateX(-50%) translateY(-50%) scale(2, 2);
   transition: 0.5s ease-in-out;
+  white-space: nowrap;
 }
 
 h1.top {
