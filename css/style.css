@@ -11,10 +11,6 @@ body {
   min-height: 100vh;
 }
 
-body.subpage {
-  overflow: auto;
-}
-
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
