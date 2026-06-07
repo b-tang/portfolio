@@ -15,12 +15,6 @@ body.subpage {
   overflow: auto;
 }
 
-@media (max-width: 768px) {
-  body.subpage {
-    overflow: hidden;
-  }
-}
-
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
